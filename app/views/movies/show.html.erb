@@ -1,0 +1,28 @@
+
+
+<h1> ******* Welcome to RetFlix! ******** </h1>
+<h2> See our collection of movies below</h2>
+
+
+<table>
+  <thead>
+    <tr>
+      <th><h3>Title</h3></th>
+      <th><h3>Description</h3></th>
+      <th>Year Released</th>
+      <th colspan="6"></th>
+    </tr>
+  </thead>
+
+ <% @movie.each do |m|  %>
+ <tbody>
+   <tr> 
+   <td><%= m.title %>  </td>
+   <td><%= m.description %>  </td> 
+   <td><%= m.year_released %>  </td>
+   </tr>
+</tbody>
+   <% end %>
+
+
+
